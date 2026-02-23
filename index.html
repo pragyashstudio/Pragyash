@@ -9,142 +9,48 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
-body{
-background:#0f0f1a;
-color:white;
-overflow-x:hidden;
-}
+body{background:#0f0f1a;color:white;overflow-x:hidden;}
 
 header{
-position:fixed;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,0.7);
-backdrop-filter:blur(10px);
+position:fixed;width:100%;padding:20px 8%;
+display:flex;justify-content:space-between;align-items:center;
+background:rgba(0,0,0,0.7);backdrop-filter:blur(10px);
 z-index:1000;
 }
-
-header h2{
-color:#00f5ff;
-font-weight:800;
-letter-spacing:2px;
-}
-
-nav a{
-color:white;
-margin-left:25px;
-text-decoration:none;
-transition:0.3s;
-}
-
+header h2{color:#00f5ff;font-weight:800;letter-spacing:2px;}
+nav a{color:white;margin-left:25px;text-decoration:none;transition:0.3s;}
 nav a:hover{color:#00f5ff;}
 
-section{
-padding:120px 8%;
-min-height:100vh;
-display:flex;
-align-items:center;
-}
+section{padding:120px 8%;min-height:100vh;display:flex;align-items:center;}
 
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+.hero{display:flex;justify-content:space-between;align-items:center;}
 
 .hero-text h1{
-font-size:52px;
-font-weight:800;
+font-size:52px;font-weight:800;
 background:linear-gradient(90deg,#00f5ff,#00ffae);
--webkit-background-clip:text;
-color:transparent;
+-webkit-background-clip:text;color:transparent;
 }
 
-.hero-text p{
-margin-top:20px;
-max-width:550px;
-line-height:1.6;
-}
+.hero-text p{margin-top:20px;max-width:550px;line-height:1.6;}
 
 .hero img{
-width:380px;
-border-radius:20px;
+width:380px;border-radius:20px;
 box-shadow:0 0 40px #00f5ff;
 }
 
-.tagline{
-margin-top:15px;
-font-size:18px;
-color:#00ffae;
-}
+.tagline{margin-top:15px;font-size:18px;color:#00ffae;}
 
 .btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 28px;
-background:#00f5ff;
-color:black;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-transition:0.4s;
+display:inline-block;margin-top:25px;padding:12px 28px;
+background:#00f5ff;color:black;border-radius:30px;
+text-decoration:none;font-weight:600;transition:0.4s;
 }
+.btn:hover{background:#00ffae;transform:scale(1.05);}
 
-.btn:hover{
-background:#00ffae;
-transform:scale(1.05);
-}
+.contact{flex-direction:column;}
+.contact-info{margin-top:30px;line-height:35px;}
 
-.service-section{
-display:flex;
-gap:50px;
-align-items:center;
-}
-
-.service-section img{
-width:500px;
-border-radius:20px;
-box-shadow:0 0 30px #00f5ff;
-}
-
-.service-content h2{
-font-size:38px;
-margin-bottom:20px;
-color:#00f5ff;
-}
-
-.service-content p{
-line-height:1.8;
-}
-
-.reveal{
-opacity:0;
-transform:translateY(80px);
-transition:1s;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
-
-.contact{
-flex-direction:column;
-}
-
-.contact-info{
-margin-top:30px;
-line-height:35px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#111;
-}
+footer{text-align:center;padding:30px;background:#111;}
 </style>
 </head>
 
@@ -154,83 +60,29 @@ background:#111;
 <h2>Pragyash Studio</h2>
 <nav>
 <a href="#home">Home</a>
-<a href="#video">Video Editing</a>
-<a href="#graphic">Graphic Design</a>
-<a href="#photo">Photo Editing</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero reveal" id="home">
+<section class="hero" id="home">
 <div class="hero-text">
 <h1>Digital Creative Architect</h1>
 <div class="tagline">Crafting Vision Into Visual Power</div>
 <p>
 I am Pragya (Born: 3 October 2008), Founder of Pragyash Studio.  
-With 8+ years of experience in creative media, I specialize in high-impact video editing, graphic branding and professional photo enhancement.  
-My mission is to transform ideas into premium digital experiences that attract, engage and convert audiences.
+With 8+ years of experience in video editing, graphic designing and photo enhancement,  
+I transform ideas into premium digital experiences that build authority and attract audiences.
 </p>
 <a href="#contact" class="btn">Hire Me</a>
 </div>
 
-<img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Pragya">
+<!-- 👇👇 YAHAN PHOTO KA NAAM CHANGE KARNA HAI 👇👇 -->
+<img src="pragya.jpg" alt="Pragya Photo">
+<!-- Agar tumhari file ka naam alag hai to yahan change kar dena -->
+
 </section>
 
-<!-- VIDEO EDITING -->
-<section class="service-section reveal" id="video">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<div class="service-content">
-<h2>Professional Video Editing</h2>
-<p>
-From cinematic storytelling to viral reels and YouTube content, I deliver high-quality edits that capture attention within seconds.  
-✔ Advanced transitions  
-✔ Color grading  
-✔ Motion graphics  
-✔ Promotional and commercial editing  
-✔ Social media optimized content  
-
-Every frame is designed to enhance engagement and brand authority.
-</p>
-</div>
-</section>
-
-<!-- GRAPHIC DESIGN -->
-<section class="service-section reveal" id="graphic">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-<div class="service-content">
-<h2>Luxury Graphic Designing</h2>
-<p>
-I create visually powerful branding assets including:  
-✔ Business posters  
-✔ Brand identity kits  
-✔ Social media creatives  
-✔ Advertisement banners  
-✔ Logo concepts  
-
-Designs that communicate professionalism and premium brand value.
-</p>
-</div>
-</section>
-
-<!-- PHOTO EDITING -->
-<section class="service-section reveal" id="photo">
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-<div class="service-content">
-<h2>High-End Photo Editing</h2>
-<p>
-Professional retouching, advanced manipulation and cinematic color correction.  
-✔ Skin retouching  
-✔ Background enhancement  
-✔ Creative composite edits  
-✔ Product image enhancement  
-
-Transforming ordinary photos into extraordinary visuals.
-</p>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact reveal" id="contact">
+<section class="contact" id="contact">
 <h1>Let's Build Something Exceptional</h1>
 <div class="contact-info">
 <p>📞 8053661827</p>
@@ -244,20 +96,6 @@ Transforming ordinary photos into extraordinary visuals.
 <footer>
 © 2026 Pragyash Studio | Premium Digital Creative Brand
 </footer>
-
-<script>
-window.addEventListener('scroll',function(){
-var reveals=document.querySelectorAll('.reveal');
-for(var i=0;i<reveals.length;i++){
-var windowheight=window.innerHeight;
-var revealtop=reveals[i].getBoundingClientRect().top;
-var revealpoint=100;
-if(revealtop<windowheight-revealpoint){
-reveals[i].classList.add('active');
-}
-}
-});
-</script>
 
 </body>
 </html>
