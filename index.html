@@ -1,84 +1,216 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pragyash Studio | Creative Portfolio</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0f172a;color:white;}
-header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#0f172a,#1e293b);}
-header h1{font-size:50px;color:#38bdf8;}
-header p{margin-top:15px;font-size:20px;color:#cbd5e1;}
-.btn{margin-top:25px;padding:12px 25px;background:#38bdf8;color:black;text-decoration:none;border-radius:30px;font-weight:bold;transition:0.3s;}
-.btn:hover{background:white;}
-section{padding:80px 10%;text-align:center;}
-h2{margin-bottom:30px;color:#38bdf8;font-size:32px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.card{background:#1e293b;padding:25px;border-radius:15px;transition:0.3s;}
-.card:hover{transform:translateY(-8px);}
-footer{text-align:center;padding:20px;background:#1e293b;color:#94a3b8;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#0f172a,#1e293b,#0f172a,#111827);
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
+color:white;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:60px;
+animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+header h1{
+font-size:55px;
+color:#38bdf8;
+}
+
+header p{
+margin-top:15px;
+font-size:20px;
+color:#cbd5e1;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+h2{
+margin-bottom:40px;
+color:#38bdf8;
+font-size:34px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+transition:0.4s;
+backdrop-filter:blur(8px);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(56,189,248,0.2);
+}
+
+.contact-box{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:rgba(0,0,0,0.6);
+color:#94a3b8;
+}
 </style>
 </head>
 
 <body>
 
+<nav>
+<div><strong>Pragyash Studio</strong></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <header>
 <h1>Pragyash Studio</h1>
-<p>Creative Video Editor | Graphic Designer | Photo Editor</p>
-<a href="#contact" class="btn">Hire Me</a>
+<p>Creative Video Editor • Graphic Designer • Photo Editor</p>
+<a href="https://wa.me/918053661827" target="_blank" class="btn">Hire Me on WhatsApp</a>
 </header>
 
-<section>
+<section id="about">
 <h2>About Me</h2>
-<p>I am a passionate creative professional specializing in cinematic video editing, powerful graphic design, and high-quality photo enhancement. I help creators and brands build strong visual identities through engaging content and impactful storytelling.</p>
+<p>I am a passionate and creative visual editor specializing in cinematic video editing, high-quality graphic design, and professional photo enhancement. I focus on delivering impactful visuals that help brands and creators grow their online presence.</p>
 </section>
 
-<section>
+<section id="skills">
 <h2>My Skills</h2>
 <div class="cards">
 <div class="card">
 <h3>🎬 Video Editing</h3>
-<p>YouTube videos, cinematic edits, reels & engaging short content.</p>
+<p>YouTube videos, cinematic edits, reels, short content creation.</p>
 </div>
 <div class="card">
 <h3>🎨 Graphic Design</h3>
-<p>Posters, thumbnails, banners & branding materials.</p>
+<p>Posters, thumbnails, banners, branding & promotional graphics.</p>
 </div>
 <div class="card">
 <h3>🖼 Photo Editing</h3>
-<p>Professional retouching, color grading & enhancements.</p>
+<p>Professional retouching, color correction & enhancement.</p>
 </div>
 </div>
 </section>
 
-<section>
+<section id="services">
 <h2>Services</h2>
 <div class="cards">
 <div class="card">
 <h3>Content Editing</h3>
-<p>Professional editing for creators & influencers.</p>
+<p>High-quality edits for creators, influencers & YouTubers.</p>
 </div>
 <div class="card">
 <h3>Business Design</h3>
-<p>Creative promotional and marketing visuals.</p>
+<p>Marketing posters, ads & social media creatives.</p>
 </div>
 <div class="card">
 <h3>Social Media Growth</h3>
-<p>Visual strategies that increase engagement & reach.</p>
+<p>Creative visuals that increase engagement & reach.</p>
 </div>
 </div>
 </section>
 
 <section id="contact">
 <h2>Contact Me</h2>
-<p>Email: your@email.com</p>
-<p>Instagram: @pragyashstudio</p>
+<div class="contact-box">
+<p><strong>📞 WhatsApp:</strong> 8053661827</p>
+<p><strong>📧 Email:</strong> pragyashstudio@gmail.com</p>
+<p><strong>📷 Instagram:</strong> <a href="https://instagram.com/ihoney1827" target="_blank" style="color:#38bdf8;text-decoration:none;">@ihoney1827</a></p>
+</div>
 </section>
 
 <footer>
-© 2026 Pragyash Studio | All Rights Reserved
+© 2026 Pragyash Studio | Designed with Creativity
 </footer>
 
 </body>
