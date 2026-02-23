@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pragyash Studio | Creative Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#1f1f1f,#292929);
+}
+
+header h1{
+    font-size:40px;
+    color:#00ffd5;
+}
+
+header p{
+    font-size:18px;
+    color:#ccc;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    color:#00ffd5;
+    margin-bottom:20px;
+}
+
+.skills, .services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,255,213,0.2);
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f1f1f;
+    color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pragyash Studio</h1>
+    <p>Creative Video Editor | Graphic Designer | Photo Editor</p>
+    <p>Turning Ideas Into Powerful Visual Stories</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+    My name is Pragya. Born on 3 October 2008, I am a passionate and creative visual artist 
+    with over 8 years of practical experience in design and video editing. 
+    I started exploring creativity at a very young age and transformed it into professional-level skills.
+    </p>
+    <p>
+    I believe in quality over quantity, clean design, emotional storytelling, and powerful visual impact. 
+    My goal is to build a strong creative brand that stands for excellence and innovation.
+    </p>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250" alt="Video Editing">
+            <h3>Video Editing</h3>
+            <p>Professional reels, cinematic edits, YouTube content & engaging short-form videos.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250" alt="Graphic Design">
+            <h3>Graphic Design</h3>
+            <p>Posters, banners, social media creatives and branding materials.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250" alt="Photo Editing">
+            <h3>Photo Editing</h3>
+            <p>High-quality retouching, color grading & professional image enhancement.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <p>
+    • 8 Years of Creative Practice  
+    • Worked on Social Media Projects  
+    • Designed Promotional Posters  
+    • Edited Engaging Video Content  
+    • Built Personal Brand: Pragyash Studio  
+    </p>
+</section>
+
+<section>
+    <h2>Why Choose Me?</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Creative Vision</h3>
+            <p>I understand trends and transform ideas into impactful visuals.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fast Delivery</h3>
+            <p>On-time project completion with professional quality.</p>
+        </div>
+
+        <div class="card">
+            <h3>Client Focused</h3>
+            <p>Your satisfaction and brand growth is my top priority.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>Instagram: @pragyashstudio</p>
+</section>
+
+<footer>
+    © 2026 Pragyash Studio | All Rights Reserved
+</footer>
+
+</body>
+</html>
