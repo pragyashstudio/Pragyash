@@ -3,97 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pragyash Studio | Luxury Creative Brand</title>
+<title>Pragyash Studio | Digital Creative Architect</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
 body{
-background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
-color:white;overflow-x:hidden;
+background:#0f0f1a;
+color:white;
+overflow-x:hidden;
 }
+
 header{
-position:fixed;width:100%;padding:20px 8%;
-display:flex;justify-content:space-between;align-items:center;
-background:rgba(0,0,0,0.6);backdrop-filter:blur(12px);
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
 z-index:1000;
 }
-header h2{color:#00f5ff;font-weight:800;letter-spacing:2px;}
-nav a{
-color:white;margin-left:25px;text-decoration:none;transition:0.3s;
+
+header h2{
+color:#00f5ff;
+font-weight:800;
+letter-spacing:2px;
 }
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+transition:0.3s;
+}
+
 nav a:hover{color:#00f5ff;}
 
-section{padding:120px 8%;}
+section{
+padding:120px 8%;
+min-height:100vh;
+display:flex;
+align-items:center;
+}
 
 .hero{
-height:100vh;display:flex;justify-content:space-between;align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
+
 .hero-text h1{
-font-size:55px;font-weight:800;
+font-size:52px;
+font-weight:800;
 background:linear-gradient(90deg,#00f5ff,#00ffae);
--webkit-background-clip:text;color:transparent;
+-webkit-background-clip:text;
+color:transparent;
 }
-.hero-text p{margin-top:20px;max-width:500px;}
-.btn{
-display:inline-block;margin-top:25px;padding:12px 28px;
-background:#00f5ff;color:black;text-decoration:none;
-border-radius:30px;font-weight:600;transition:0.4s;
+
+.hero-text p{
+margin-top:20px;
+max-width:550px;
+line-height:1.6;
 }
-.btn:hover{background:#00ffae;transform:scale(1.05);}
+
 .hero img{
-width:380px;border-radius:20px;
+width:380px;
+border-radius:20px;
 box-shadow:0 0 40px #00f5ff;
 }
 
-.glass{
-background:rgba(255,255,255,0.08);
-padding:40px;border-radius:20px;
-backdrop-filter:blur(15px);
+.tagline{
+margin-top:15px;
+font-size:18px;
+color:#00ffae;
 }
 
-.services,.portfolio{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;margin-top:40px;
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 28px;
+background:#00f5ff;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.4s;
 }
-.card{
-background:rgba(255,255,255,0.08);
-padding:20px;border-radius:20px;transition:0.4s;
+
+.btn:hover{
+background:#00ffae;
+transform:scale(1.05);
 }
-.card:hover{
-transform:translateY(-10px);
+
+.service-section{
+display:flex;
+gap:50px;
+align-items:center;
+}
+
+.service-section img{
+width:500px;
+border-radius:20px;
 box-shadow:0 0 30px #00f5ff;
 }
-.card img{
-width:100%;border-radius:15px;margin-bottom:15px;
+
+.service-content h2{
+font-size:38px;
+margin-bottom:20px;
+color:#00f5ff;
 }
 
-.skill{margin-top:20px;}
-.progress{
-background:#222;border-radius:20px;overflow:hidden;
-}
-.progress div{
-height:10px;
-background:linear-gradient(90deg,#00f5ff,#00ffae);
-animation:grow 3s forwards;
-}
-@keyframes grow{
-from{width:0;}
+.service-content p{
+line-height:1.8;
 }
 
-.contact-container{
-display:flex;gap:40px;margin-top:40px;
+.reveal{
+opacity:0;
+transform:translateY(80px);
+transition:1s;
 }
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.contact{
+flex-direction:column;
+}
+
 .contact-info{
+margin-top:30px;
 line-height:35px;
 }
+
 footer{
-text-align:center;padding:30px;margin-top:50px;
-background:rgba(0,0,0,0.6);
+text-align:center;
+padding:30px;
+background:#111;
 }
-.reveal{opacity:0;transform:translateY(50px);transition:1s;}
-.reveal.active{opacity:1;transform:translateY(0);}
 </style>
 </head>
 
@@ -103,79 +154,95 @@ background:rgba(0,0,0,0.6);
 <h2>Pragyash Studio</h2>
 <nav>
 <a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
+<a href="#video">Video Editing</a>
+<a href="#graphic">Graphic Design</a>
+<a href="#photo">Photo Editing</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero reveal" id="home">
 <div class="hero-text">
-<h1>Luxury Creative Studio</h1>
-<p>Professional Video Editor, Graphic Designer & Branding Expert with 8+ years of creative experience delivering premium digital content.</p>
+<h1>Digital Creative Architect</h1>
+<div class="tagline">Crafting Vision Into Visual Power</div>
+<p>
+I am Pragya (Born: 3 October 2008), Founder of Pragyash Studio.  
+With 8+ years of experience in creative media, I specialize in high-impact video editing, graphic branding and professional photo enhancement.  
+My mission is to transform ideas into premium digital experiences that attract, engage and convert audiences.
+</p>
 <a href="#contact" class="btn">Hire Me</a>
 </div>
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+
+<img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Pragya">
 </section>
 
-<section id="about" class="reveal">
-<div class="glass">
-<h1>About Me</h1>
-<p>I am Pragya (Born 3 October 2008), founder of Pragyash Studio. With over 8 years of experience in video editing, graphic designing, and digital branding, I help businesses build powerful visual identity with creativity and strategy.</p>
-</div>
-</section>
-
-<section id="services" class="reveal">
-<h1>Premium Services</h1>
-<div class="services">
-<div class="card">
+<!-- VIDEO EDITING -->
+<section class="service-section reveal" id="video">
 <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<h3>Video Editing</h3>
-<p>Cinematic reels, YouTube videos & commercial content.</p>
+<div class="service-content">
+<h2>Professional Video Editing</h2>
+<p>
+From cinematic storytelling to viral reels and YouTube content, I deliver high-quality edits that capture attention within seconds.  
+✔ Advanced transitions  
+✔ Color grading  
+✔ Motion graphics  
+✔ Promotional and commercial editing  
+✔ Social media optimized content  
+
+Every frame is designed to enhance engagement and brand authority.
+</p>
 </div>
-<div class="card">
+</section>
+
+<!-- GRAPHIC DESIGN -->
+<section class="service-section reveal" id="graphic">
 <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-<h3>Graphic Designing</h3>
-<p>Luxury branding, posters & business designs.</p>
+<div class="service-content">
+<h2>Luxury Graphic Designing</h2>
+<p>
+I create visually powerful branding assets including:  
+✔ Business posters  
+✔ Brand identity kits  
+✔ Social media creatives  
+✔ Advertisement banners  
+✔ Logo concepts  
+
+Designs that communicate professionalism and premium brand value.
+</p>
 </div>
-<div class="card">
+</section>
+
+<!-- PHOTO EDITING -->
+<section class="service-section reveal" id="photo">
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-<h3>Photo Editing</h3>
-<p>High-end retouching & creative manipulation.</p>
-</div>
+<div class="service-content">
+<h2>High-End Photo Editing</h2>
+<p>
+Professional retouching, advanced manipulation and cinematic color correction.  
+✔ Skin retouching  
+✔ Background enhancement  
+✔ Creative composite edits  
+✔ Product image enhancement  
+
+Transforming ordinary photos into extraordinary visuals.
+</p>
 </div>
 </section>
 
-<section id="portfolio" class="reveal">
-<h1>Portfolio Showcase</h1>
-<div class="portfolio">
-<div class="card"><img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475"></div>
-</div>
-</section>
-
-<section id="contact" class="reveal">
-<h1>Contact Me</h1>
-<div class="contact-container glass">
-<div>
-<h3>Let's Build Something Premium</h3>
-<p>Ready to elevate your brand with creative excellence.</p>
-</div>
+<!-- CONTACT -->
+<section class="contact reveal" id="contact">
+<h1>Let's Build Something Exceptional</h1>
 <div class="contact-info">
 <p>📞 8053661827</p>
 <p>📧 pragyashstudio@gmail.com</p>
 <p>📸 Instagram: ihoney1827</p>
 <p><a href="https://wa.me/918053661827" target="_blank" style="color:#00f5ff;">Direct WhatsApp</a></p>
 <p><a href="https://instagram.com/ihoney1827" target="_blank" style="color:#00f5ff;">Open Instagram</a></p>
-<p><a href="mailto:pragyashstudio@gmail.com" style="color:#00f5ff;">Send Email</a></p>
-</div>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Pragyash Studio | Luxury Creative Brand</p>
+© 2026 Pragyash Studio | Premium Digital Creative Brand
 </footer>
 
 <script>
